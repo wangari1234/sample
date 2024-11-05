@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif; /* Set the font for the page */
+    background-color: #f0f4f8; /* Light background color */
+    margin: 0;
+    padding: 20px; /* Add some padding around the page */
+    color: #333; /* Default text color */
+  }
+  
+  h1 {
+    text-align: center; /* Center the heading */
+    color: #fc60da; /* Primary color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  p {
+    text-align: center; /* Center the paragraph text */
+    margin-bottom: 40px; /* Space below the paragraph */
+    line-height: 1.6; /* Increase line height for readability */
+  }
+
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #d690c1;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 20px); /* Default for desktop: 3 cards */
+    box-sizing: border-box;
+}
+
+.card h2 {
+    color: #d374db; /* Primary color for card headings */
+    margin-top: 0; /* Remove default top margin */
+  }
+  
+  .card p {
+    line-height: 1.5; /* Increase line height for better readability */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px); /* Tablet: 2 cards */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%; /* Mobile: 1 card */
+    }
+}

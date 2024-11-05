@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif; /* Set the font for the page */
+    background-color: #f0f4f8; /* Light background color */
+    margin: 0;
+    padding: 20px; /* Add some padding around the page */
+    color: #333; /* Default text color */
+  }
+  
+  .todo-container {
+    max-width: 600px; /* Limit the width of the todo container */
+    margin: 0 auto; /* Center the container */
+    background-color: #f0bae9; 
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside the container */
+  }
+  
+  h2 {
+    text-align: center; /* Center the heading */
+    color: #7a1c83; /* Primary color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  .input-group {
+    display: flex; /* Use flexbox for the input and button */
+    justify-content: space-between; /* Space between input and button */
+    margin-bottom: 20px; /* Space below the input group */
+  }
+  
+  input {
+    flex: 1; /* Allow input to grow */
+    padding: 10px; /* Padding inside input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size for input */
+  }
+  
+  button {
+    padding: 10px 15px; /* Padding inside buttons */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #b828a0; /* Primary color for buttons */
+    color: white; /* Text color for buttons */
+    cursor: pointer; /* Cursor pointer on hover */
+    transition: background-color 0.2s; /* Smooth transition for hover effect */
+  }
+  
+  button:hover {
+    background-color: #cc1f53; /* Darker shade on hover */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+  }
+  
+  li {
+    display: flex; /* Use flexbox for task items */
+    justify-content: space-between; /* Space between task text and buttons */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Padding inside list items */
+    border-bottom: 1px solid #eee; /* Light border between tasks */
+  }
+  
+  li:last-child {
+    border-bottom: none; /* Remove border for last item */
+  }
+  
+  li button {
+    background-color: #b828a0; /* Red color for edit/delete buttons */
+    margin-left: 10px; /* Space between buttons */
+  }
+  
+  li button:hover {
+    background-color: #c82333; /* Darker shade on hover */
+  }
+  
